@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rikelme Oliveira | Desenvolvedor Full Stack</title>
+  <meta name="description" content="Portfólio de Rikelme Oliveira Gonçalves, Desenvolvedor Full Stack focado em soluções end-to-end com React, Node.js e bases de dados relacionais.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="logo">Rikelme<span class="accent">.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-nav>Home</a>
+        <a href="#about" class="nav-link" data-nav>Sobre</a>
+        <a href="#skills" class="nav-link" data-nav>Skills</a>
+        <a href="#trajetoria" class="nav-link" data-nav>Trajetória</a>
+        <a href="#projects" class="nav-link" data-nav>Projetos</a>
+        <a href="#contact" class="nav-link" data-nav>Contato</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta">Contato</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="eyebrow">OLÁ, EU SOU</p>
+          <h1 class="hero__name">Rikelme Oliveira</h1>
+          <h2 class="hero__role">Desenvolvedor <span class="accent">Full Stack</span></h2>
+          <p class="hero__tagline">
+            Construo soluções de ponta a ponta — integrando back-ends robustos, bases de
+            dados relacionais e interfaces de alta performance em React para gerar
+            eficiência operacional e valor real ao negócio.
+          </p>
+
+          <div class="hero__socials">
+            <a href="https://github.com/rikelmedev" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.13 7.65 10.61.56.1.76-.24.76-.54 0-.27-.01-1.15-.02-2.09-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.65-1.24-1.65-1.02-.7.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.71 2.62 1.22 3.26.93.1-.72.39-1.22.71-1.5-2.48-.28-5.1-1.24-5.1-5.52 0-1.22.44-2.22 1.15-3-.11-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.22 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.29-2.63 5.23-5.13 5.51.4.35.76 1.04.76 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.65.77.54 4.44-1.48 7.64-5.67 7.64-10.61C23.02 5.24 18.27.5 12 .5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/rikelme-oliveira-dev" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="https://wa.me/5517997188851" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.29-.15-1.73-.85-2-.95-.27-.1-.46-.15-.66.15-.2.29-.76.95-.93 1.14-.17.2-.34.22-.63.07-.29-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.5-.66-.5-.17 0-.37-.02-.56-.02-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.43 0 1.44 1.05 2.83 1.19 3.02.15.2 2.06 3.14 4.99 4.4.7.3 1.24.48 1.67.62.7.22 1.34.19 1.84.11.56-.08 1.73-.71 1.98-1.39.24-.68.24-1.27.17-1.39-.07-.12-.27-.2-.56-.34z"/><path d="M12.01 2C6.5 2 2 6.48 2 11.98c0 1.87.5 3.63 1.44 5.15L2 22l4.99-1.3a10.03 10.03 0 0 0 5.02 1.34c5.5 0 10-4.48 10-9.98C22.01 6.48 17.51 2 12.01 2Zm0 18.2c-1.63 0-3.16-.44-4.48-1.24l-.32-.19-3.05.8.82-2.96-.21-.31A8.17 8.17 0 0 1 3.8 11.98c0-4.53 3.7-8.2 8.21-8.2 4.51 0 8.19 3.67 8.19 8.2 0 4.53-3.68 8.22-8.19 8.22Z"/></svg>
+            </a>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn-primary">Ver Projetos <span class="arrow">→</span></a>
+            <a href="#contact" class="btn btn-outline">Contato</a>
+          </div>
+
+          <p class="hero__note">Estudante de Engenharia de Software · Disponível para oportunidades</p>
+        </div>
+
+        <div class="hero__media reveal">
+          <div class="photo-frame">
+            <img src="assets/img/profile.jpg" alt="Foto de Rikelme Oliveira" class="photo" onerror="this.parentElement.classList.add('photo-frame--empty')">
+            <div class="photo-fallback">RO</div>
+          </div>
+          <div class="floating-card">
+            <span class="floating-card__eyebrow">OLÁ, EU SOU</span>
+            <strong>Rikelme Oliveira</strong>
+            <span class="floating-card__role">Full Stack Developer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <div class="polaroid">
+            <img src="assets/img/profile-about.jpg" alt="Rikelme Oliveira" onerror="this.parentElement.classList.add('polaroid--empty')">
+            <div class="photo-fallback">RO</div>
+            <p class="polaroid__caption">Rikelme Oliveira — Full Stack Developer</p>
+          </div>
+          <span class="badge badge--available"><span class="dot"></span> Disponível para oportunidades</span>
+        </div>
+
+        <div class="about__content reveal">
+          <p class="eyebrow">SOBRE</p>
+          <h2 class="section-title">Sobre <span class="accent">mim</span></h2>
+          <p class="about__text">
+            Sou estudante de Engenharia de Software e Desenvolvedor Full Stack, com experiência
+            comprovada em liderar o ciclo completo de entrega de software. Alio uma forte
+            <strong> visão de negócio</strong> à capacidade técnica de arquitetar bases de dados
+            relacionais e APIs RESTful, conectando-as a interfaces modernas em React.
+          </p>
+          <p class="about__text">
+            Tenho histórico prático na resolução de desafios complexos de integração, garantindo
+            a resiliência dos dados no back-end e uma experiência fluida no front-end — em
+            sistemas de gestão e e-commerce.
+          </p>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🗄️</div>
+              <h3>Arquitetura Back-End</h3>
+              <p>APIs RESTful e bases de dados relacionais pensadas para resiliência e escala.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">⚛️</div>
+              <h3>Interfaces em React</h3>
+              <p>Front-ends de alta performance com React 19, TypeScript e Tailwind CSS.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🔗</div>
+              <h3>Integração de Sistemas</h3>
+              <p>Sincronização em tempo real e integridade de dados em fluxos críticos.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📈</div>
+              <h3>Visão de Negócio</h3>
+              <p>Foco em eficiência operacional e valor real, não só em código.</p>
+            </div>
+          </div>
+
+          <a href="assets/files/Rikelme_Oliveira_CV.pdf" class="btn btn-primary" download>Download CV ⬇</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow center">O QUE EU USO</p>
+          <h2 class="section-title center">Stack <span class="accent">Técnica</span></h2>
+          <span class="title-underline"></span>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skills-category__title">Front-End (Interface)</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><span class="skill-icon" style="--c:#61dafb22;color:#61dafb">⚛️</span><strong>React (v19)</strong><span>UI Library</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#3178c622;color:#3178c6">TS</span><strong>TypeScript</strong><span>Tipagem Estática</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#f7df1e22;color:#f7df1e">JS</span><strong>JavaScript</strong><span>ES6+</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#38bdf822;color:#38bdf8">🎨</span><strong>Tailwind CSS</strong><span>v4</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#a78bfa22;color:#a78bfa">📱</span><strong>Design Responsivo</strong><span>Mobile-first</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skills-category__title">Back-End &amp; Integração</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><span class="skill-icon" style="--c:#68a06322;color:#68a063">⬢</span><strong>Node.js</strong><span>Backend Runtime</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#f8981022;color:#f89810">☕</span><strong>Java</strong><span>Fundamentos</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#3776ab22;color:#3776ab">🐍</span><strong>Python</strong><span>Em estudo</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#34d39922;color:#34d399">🔌</span><strong>APIs RESTful</strong><span>Construção &amp; Consumo</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skills-category__title">Bases de Dados</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><span class="skill-icon" style="--c:#4479a122;color:#4479a1">🗃️</span><strong>SQL / MySQL</strong><span>Relacional</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#f5f5f522;color:#f5f5f5">📐</span><strong>Modelagem de Dados</strong><span>Relacional</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#ffca2822;color:#ffca28">🔥</span><strong>Firebase Firestore</strong><span>NoSQL</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3 class="skills-category__title">Engenharia &amp; DevOps</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><span class="skill-icon" style="--c:#f0503222;color:#f05032">🌿</span><strong>Git &amp; GitHub</strong><span>Controle de Versão</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#34d39922;color:#34d399">🔁</span><strong>CI/CD</strong><span>Automação</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#7c5cff22;color:#7c5cff">🧩</span><strong>POO</strong><span>Boas Práticas</span></div>
+            <div class="skill-card"><span class="skill-icon" style="--c:#38bdf822;color:#38bdf8">🏗️</span><strong>Arquitetura de Software</strong><span>Design de Sistemas</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA (EXPERIÊNCIA + FORMAÇÃO) -->
+    <section id="trajetoria" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow center">MINHA JORNADA</p>
+          <h2 class="section-title center">Trajetória</h2>
+          <span class="title-underline"></span>
+        </div>
+
+        <div class="trajetoria__grid">
+          <div class="trajetoria__col reveal">
+            <h3 class="trajetoria__col-title">Experiência</h3>
+
+            <div class="timeline-item">
+              <span class="timeline-date">Jan 2024 — Atualmente</span>
+              <h4>Desenvolvedor Full Stack — Independente</h4>
+              <p>Liderança do ciclo completo de entrega de software em projetos reais: arquitetura
+                back-end, modelagem de dados e interfaces em React. Veja os projetos abaixo.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-date">2024 — 2026</span>
+              <h4>Oxygen Nutrition — Gestão e Vendas</h4>
+              <p>Gestão de estoque, estratégia de marketing e vendas online. Experiência como
+                proprietário que consolidou minha "visão de dono" e foco em resultados operacionais.</p>
+            </div>
+          </div>
+
+          <div class="trajetoria__col reveal">
+            <h3 class="trajetoria__col-title">Formação Acadêmica</h3>
+
+            <div class="timeline-item">
+              <span class="timeline-date">Previsão: 2029</span>
+              <h4>Bacharelado em Engenharia de Software</h4>
+              <p>Estácio</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-date">Concluído: 2020</span>
+              <h4>Técnico em Análise e Desenvolvimento de Sistemas</h4>
+              <p>ETEC</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-date">Concluído: 2018</span>
+              <h4>Técnico em Informática para Internet</h4>
+              <p>ETEC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow center">MEU TRABALHO</p>
+          <h2 class="section-title center">Projetos <span class="accent">Selecionados</span></h2>
+          <span class="title-underline"></span>
+        </div>
+
+        <div class="projects-grid reveal">
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="project-tag">Sistema ERP</span>
+              <h3>Esquina do Sabor</h3>
+            </div>
+            <p>Responsável pela arquitetura realtime da plataforma oficial de gestão.
+              Implementei sincronização instantânea de pedidos e automação de logística via API,
+              garantindo estabilidade operacional para o comércio local.</p>
+            <div class="project-card__tags">
+              <span>React</span><span>Node.js</span><span>API REST</span><span>Realtime</span>
+            </div>
+            <a href="https://github.com/rikelmedev" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="project-tag">E-commerce</span>
+              <h3>PAWS Pet</h3>
+            </div>
+            <p>Identifiquei e solucionei uma falha crítica de infraestrutura no checkout que
+              causava perda de faturamento. Desenvolvi um script em React garantindo 100% de
+              integridade nos envios de dados (POST), recuperando o faturamento sob alto tráfego.</p>
+            <div class="project-card__tags">
+              <span>React</span><span>Debugging</span><span>Resiliência de Dados</span>
+            </div>
+            <a href="https://github.com/rikelmedev" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="project-tag">Plataforma de Viagens</span>
+              <h3>Dream Travel</h3>
+            </div>
+            <p>Construção de plataforma de curadoria de viagens utilizando tecnologias de ponta
+              (React 19 e Tailwind v4), com foco em performance e UI editorial.</p>
+            <div class="project-card__tags">
+              <span>React 19</span><span>Tailwind v4</span><span>UI/UX</span>
+            </div>
+            <a href="https://github.com/rikelmedev" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="project-tag">Sistema de Gestão</span>
+              <h3>Gestão Escolar</h3>
+            </div>
+            <p>Sistema monolítico desenvolvido de forma autônoma com PHP puro e MySQL para
+              controle de registros educacionais. Modelagem relacional, consultas dinâmicas e
+              rotas de cadastro com foco em integridade e lógica estruturada.</p>
+            <div class="project-card__tags">
+              <span>PHP</span><span>MySQL</span><span>Modelagem de Dados</span>
+            </div>
+            <a href="https://github.com/rikelmedev" target="_blank" rel="noopener" class="project-link">Ver no GitHub →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow center">FALE COMIGO</p>
+          <h2 class="section-title center">Vamos construir algo <span class="accent">incrível juntos.</span></h2>
+          <p class="section-subtitle center">Tem um projeto em mente ou quer conversar sobre uma oportunidade? Ficarei feliz em ouvir você.</p>
+        </div>
+
+        <div class="contact__grid reveal">
+          <div class="contact__info">
+            <a href="mailto:rikelmemini100@gmail.com" class="contact-card">
+              <span class="contact-icon contact-icon--green">✉️</span>
+              <span>
+                <small>EMAIL</small>
+                <strong>rikelmemini100@gmail.com</strong>
+              </span>
+            </a>
+            <a href="https://github.com/rikelmedev" target="_blank" rel="noopener" class="contact-card">
+              <span class="contact-icon contact-icon--purple">🐙</span>
+              <span>
+                <small>GITHUB</small>
+                <strong>github.com/rikelmedev</strong>
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/rikelme-oliveira-dev" target="_blank" rel="noopener" class="contact-card">
+              <span class="contact-icon contact-icon--blue">in</span>
+              <span>
+                <small>LINKEDIN</small>
+                <strong>linkedin.com/in/rikelme-oliveira-dev</strong>
+              </span>
+            </a>
+            <a href="https://wa.me/5517997188851" target="_blank" rel="noopener" class="contact-card">
+              <span class="contact-icon contact-icon--green">📱</span>
+              <span>
+                <small>WHATSAPP</small>
+                <strong>+55 17 99718-8851</strong>
+              </span>
+            </a>
+
+            <span class="badge badge--available badge--block"><span class="dot"></span> Disponível para oportunidades — estágio &amp; freelance</span>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">NOME</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+              </div>
+              <div class="form-field">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="subject">ASSUNTO</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Selecione um tópico...</option>
+                <option value="Oportunidade de vaga">Oportunidade de vaga</option>
+                <option value="Projeto freelance">Projeto freelance</option>
+                <option value="Colaboração">Colaboração</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message">MENSAGEM</label>
+              <textarea id="message" name="message" rows="5" placeholder="Me conte sobre a vaga ou ideia..." required></textarea>
+            </div>
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary">Enviar mensagem ➤</button>
+              <span class="form-note">Costumo responder em até 24h</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Rikelme Oliveira. Todos os direitos reservados.</span>
+      <div class="footer__socials">
+        <a href="https://github.com/rikelmedev" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/rikelme-oliveira-dev" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:rikelmemini100@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
