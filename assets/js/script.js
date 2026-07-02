@@ -4,10 +4,14 @@ const navLinks = document.getElementById('navLinks');
 
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('is-open');
+  menuToggle.classList.toggle('is-active');
 });
 
 navLinks.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => navLinks.classList.remove('is-open'));
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('is-open');
+    menuToggle.classList.remove('is-active');
+  });
 });
 
 // Scroll-spy active nav link
