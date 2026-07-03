@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow1" cx="15%" cy="15%" r="55%">
+      <stop offset="0%" stop-color="#2f8fff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2f8fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="90%" cy="80%" r="55%">
+      <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="underline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2f8fff"/>
+      <stop offset="100%" stop-color="#7c5cff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#06070a"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <text x="90" y="230" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#2f8fff">OLA, EU SOU</text>
+
+  <text x="90" y="320" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="800" fill="#f5f5f7">Rikelme Oliveira</text>
+
+  <text x="90" y="390" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#9ca3af">Desenvolvedor <tspan fill="#2f8fff">Full Stack</tspan></text>
+
+  <rect x="90" y="430" width="90" height="6" rx="3" fill="url(#underline)"/>
+
+  <text x="90" y="490" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#9ca3af">React &#183; TypeScript &#183; Node.js &#183; APIs RESTful</text>
+
+  <text x="90" y="580" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#f5f5f7">rikelmedev.vercel.app</text>
+</svg>
