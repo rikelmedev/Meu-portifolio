@@ -1,3 +1,22 @@
+// Background parallax on scroll
+const glowWrap1 = document.getElementById('glowWrap1');
+const glowWrap2 = document.getElementById('glowWrap2');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (glowWrap1 && glowWrap2 && !prefersReducedMotion) {
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      glowWrap1.style.transform = `translateY(${y * 0.15}px)`;
+      glowWrap2.style.transform = `translateY(${y * -0.1}px)`;
+      ticking = false;
+    });
+  }, { passive: true });
+}
+
 // Preloader
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');

@@ -139,13 +139,18 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* Background glows */
-.bg-glow {
+.bg-glow-wrap {
   position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+.bg-glow {
+  position: absolute;
   border-radius: 50%;
   filter: blur(120px);
   opacity: 0.25;
-  z-index: 0;
-  pointer-events: none;
 }
 .bg-glow-1 {
   width: 480px; height: 480px;
