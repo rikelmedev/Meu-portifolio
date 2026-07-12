@@ -75,7 +75,7 @@ const revealObserver = new IntersectionObserver(
 );
 document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
 
-// Contact form -> opens default mail client with prefilled content
+// Contact form -> opens WhatsApp with prefilled message
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -84,9 +84,9 @@ contactForm.addEventListener('submit', (e) => {
   const subject = document.getElementById('subject').value;
   const message = document.getElementById('message').value;
 
-  const body = `Nome: ${name}\nEmail: ${email}\n\n${message}`;
-  const mailtoLink = `mailto:rikelmemini100@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  window.location.href = mailtoLink;
+  const text = `Olá, Rikelme! Meu nome é ${name} (${email}).\nAssunto: ${subject}\n\n${message}`;
+  const whatsappLink = `https://wa.me/5517997188851?text=${encodeURIComponent(text)}`;
+  window.open(whatsappLink, '_blank', 'noopener');
 });
 
 // Footer year
