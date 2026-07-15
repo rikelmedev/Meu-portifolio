@@ -1,5 +1,7 @@
 # Rikelme Oliveira — Portfólio
 
+![Banner do portfólio](assets/img/og-cover.svg)
+
 Portfólio pessoal de Rikelme Oliveira Gonçalves, Desenvolvedor Full Stack.
 
 🔗 **Site ao vivo:** [rikelme-oliveira-dev.vercel.app](https://rikelme-oliveira-dev.vercel.app)
@@ -22,19 +24,3 @@ Site em página única apresentando trajetória profissional, stack técnica, fo
 - HTML5, CSS3 e JavaScript puro (sem frameworks ou build step)
 - Animações de scroll reveal, parallax e transições em CSS/JS
 - Deploy contínuo na [Vercel](https://vercel.com)
-
-## Rodando localmente
-
-Como é um site 100% estático, basta servir a pasta com qualquer servidor HTTP simples:
-
-```bash
-python -m http.server 5500
-```
-
-Depois acesse `http://localhost:5500`.
-
-## Contato
-
-- GitHub: [github.com/rikelmedev](https://github.com/rikelmedev)
-- LinkedIn: [linkedin.com/in/rikelme-oliveira-dev](https://www.linkedin.com/in/rikelme-oliveira-dev)
-- E-mail: rikelmemini100@gmail.com
